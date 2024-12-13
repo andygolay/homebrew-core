@@ -8,17 +8,11 @@ class Movement < Formula
   
     livecheck do
       url :stable
-      regex(/^aptos-cli[._-]v?(\d+(?:\.\d+)+)$/i)
+      regex(/^movement-cli[._-]v?(\d+(?:\.\d+)+)$/i)
     end
   
     bottle do
-      sha256 cellar: :any_skip_relocation, arm64_sonoma:   "<checksum>"
-      sha256 cellar: :any_skip_relocation, arm64_ventura:  "<checksum>"
-      sha256 cellar: :any_skip_relocation, arm64_monterey: "<checksum>"
-      sha256 cellar: :any_skip_relocation, sonoma:         "<checksum>"
-      sha256 cellar: :any_skip_relocation, ventura:        "<checksum>"
-      sha256 cellar: :any_skip_relocation, monterey:       "<checksum>"
-      sha256 cellar: :any_skip_relocation, x86_64_linux:   "<checksum>"
+      sha256 cellar: :any_skip_relocation, arm64_sonoma:   "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   
     depends_on "cmake" => :build
